@@ -1,0 +1,12 @@
+.productsShown{
+    display: flex;
+    justify-content: center;
+}
+
+.productsShown img{
+
+    height: 700px;
+    width: 30rem;
+    object-fit: cover;  
+    margin-left: 1rem;
+}

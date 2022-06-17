@@ -1,0 +1,8 @@
+.addToCart{
+    color: #bd9576;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+}

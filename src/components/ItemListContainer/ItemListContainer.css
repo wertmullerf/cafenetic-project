@@ -1,0 +1,38 @@
+.categories {
+	color: #fff;
+	list-style: none;
+	margin-bottom: 1rem;
+	font-size: 0.8rem;
+	letter-spacing: 1px;
+	margin-left: 8rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	display: flex;
+	flex-direction: column;
+}
+.linkCategory {
+	color: #fff;
+	text-decoration: none;
+	margin-left: 1rem;
+	transition: 0.5s;
+}
+.linkCategory:hover {
+	color: #bd9576;
+	text-decoration: none;
+}
+.categories li {
+	margin-right: 1rem;
+}
+.productsPage {
+	margin-top: 5rem;
+}
+.shopTitle {
+	font-size: 2rem;
+	font-weight: 600;
+	letter-spacing: 6px;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}

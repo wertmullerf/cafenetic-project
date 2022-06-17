@@ -1,0 +1,40 @@
+.productsList {
+	height: 100vh;
+}
+
+.productsList img {
+	height: 700px;
+	width: 25rem;
+	object-fit: cover;
+	margin-left: 1rem;
+}
+.productsList h6 {
+	font-size: 1rem;
+	font-weight: 500;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: 1rem;
+}
+
+.productsList span {
+	font-size: 1rem;
+	font-weight: 500;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 0.8rem;
+}
+.productsList {
+	max-width: 25%;
+	margin-right: 0.3rem;
+}
+.btnItem {
+	color: #bd9576;
+	font-size: 1.1rem;
+	font-weight: 600;
+	text-align: center;
+	cursor: pointer;
+	display: block;
+	text-decoration: none;
+}

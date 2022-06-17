@@ -1,0 +1,35 @@
+.productDetailShown {
+	height: 80vh;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+.productDetailImg img {
+	width: 500px;
+	object-fit: cover;
+	display: flex;
+}
+
+.productDetailText h3 {
+	color: #fff;
+	font-size: 2rem;
+}
+.productDetailText p {
+	color: #fff;
+	font-size: 1rem;
+	width: 70%;
+	font-weight: 400;
+	margin: 1rem 0 1rem 0;
+}
+.productDetailText strong {
+	color: #fff;
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+.productDetailText h6 {
+	margin-top: 1rem;
+	color: #bd9576;
+	font-size: 1rem;
+	font-weight: 600;
+	margin-bottom: 2rem;
+}

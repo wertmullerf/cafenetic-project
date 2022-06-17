@@ -1,0 +1,35 @@
+.cardSection{
+    display: flex;
+    gap:2%;
+    margin-top: 2rem;
+}
+.card{
+    height: 700px;
+    width: 30rem;  
+    background-size: cover;  
+    background-position: center;
+    border: none;
+    display: inline;
+
+}
+.card strong{
+    position: relative;
+    top: 450px;
+    margin-left: 1rem;
+}
+.card p{
+    position: relative;
+    top: 440px;
+    width: 100%;
+    right: 115px;
+}
+
+.card1{
+    background-image: url('../../images/shop2.jpg');
+}
+.card2{
+    background-image: url('../../images/products.jpg');
+}
+.card3{
+    background-image: url('../../images/coffee2.jpg');
+}

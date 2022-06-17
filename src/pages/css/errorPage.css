@@ -1,0 +1,28 @@
+.errorPage {
+	display: flex;
+	background-image: url("../../images/backgroundImg.jpg");
+	background-size: cover;
+	height: 102vh;
+	align-items: center;
+	flex-direction: column;
+	margin-top: -5rem;
+	justify-content: center;
+}
+.errorPage h6 {
+	font-size: 2rem;
+	font-weight: 500;
+	color: #fff;
+}
+.return {
+	margin-top: 2rem;
+	font-weight: 500;
+	font-size: 1.1rem;
+	background-color: #fff;
+	padding: 1rem 2rem;
+	color: #000;
+	text-decoration: none;
+	transition: 0.5s;
+}
+.return:hover {
+	color: #000;
+}

@@ -1,0 +1,20 @@
+.productsFirstShow {
+	height: 100vh;
+}
+.link {
+	color: #000000;
+	display: flex;
+	margin: auto;
+	font-size: 1.1rem;
+	text-decoration: none;
+	transition: 0.5s;
+	margin-top: 2rem;
+	width: fit-content;
+	padding: 1rem 1.5rem;
+	background-color: #ffffff;
+	font-weight: 500;
+}
+.link:hover {
+	color: #bd9576;
+	background-color: #000000;
+}
