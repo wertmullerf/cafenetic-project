@@ -1,7 +1,11 @@
 import React from "react";
 import "./ItemDetail.css";
+import ItemCount from "./ItemCount/ItemCount";
 export default function ItemDetail({ productDetail }) {
 	const { name, description, img, stock, price } = productDetail;
+	// const onAdd = (contador) => {
+	// 	alert(`Pudiste agregar ${contador} productos`);
+	// };
 	return (
 		<div>
 			<div className="productDetailShown container">
@@ -10,6 +14,7 @@ export default function ItemDetail({ productDetail }) {
 					<p>{description}</p>
 					<strong>${price}</strong>
 					<p>Products in stock: {stock}</p>
+					<ItemCount stock={stock} initial={1} />
 				</div>
 				<div className="productDetailImg">
 					<img src={img} alt="" />

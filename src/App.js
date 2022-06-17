@@ -3,6 +3,7 @@ import "./App.css";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import NavBarBootstrap from "./components/NavBar/NavBarBootstrap";
+import { Cart } from "./pages/Cart";
 import Contact from "./pages/Contact";
 import ErrorPage from "./pages/ErrorPage";
 import Home from "./pages/Home";
@@ -27,6 +28,7 @@ function App() {
 					/>
 					<Route path="/journal" element={<Journal />} />
 					<Route path="/contact" element={<Contact />} />
+					<Route path="/cart" element={<Cart />} />
 					<Route path="*" element={<ErrorPage />} />
 				</Routes>
 			</BrowserRouter>

@@ -136,10 +136,3 @@ export default function ItemListContainer() {
 		</div>
 	);
 }
-
-// <div className="itemCount">
-//     <ItemCount stock={6} initial={1} onAdd={onAdd}/>
-// </div>
-// const onAdd = (contador) =>{
-//    alert(`Pudiste agregar ${contador} productos`)
-// }
