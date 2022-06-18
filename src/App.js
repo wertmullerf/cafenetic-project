@@ -3,6 +3,7 @@ import "./App.css";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import NavBarBootstrap from "./components/NavBar/NavBarBootstrap";
+import CartContextProvider from "./context/CartContext";
 import { Cart } from "./pages/Cart";
 import Contact from "./pages/Contact";
 import ErrorPage from "./pages/ErrorPage";
@@ -14,23 +15,25 @@ function App() {
 	return (
 		<div className="App">
 			<BrowserRouter>
-				<NavBarBootstrap />
-				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/shop" element={<Products />} />
-					<Route
-						path="/item/:idProducto"
-						element={<ItemDetailContainer />}
-					/>
-					<Route
-						path="/shop/:categoryId"
-						element={<ItemListContainer />}
-					/>
-					<Route path="/journal" element={<Journal />} />
-					<Route path="/contact" element={<Contact />} />
-					<Route path="/cart" element={<Cart />} />
-					<Route path="*" element={<ErrorPage />} />
-				</Routes>
+				<CartContextProvider>
+					<NavBarBootstrap />
+					<Routes>
+						<Route path="/" element={<Home />} />
+						<Route path="/shop" element={<Products />} />
+						<Route
+							path="/item/:idProducto"
+							element={<ItemDetailContainer />}
+						/>
+						<Route
+							path="/shop/:categoryId"
+							element={<ItemListContainer />}
+						/>
+						<Route path="/journal" element={<Journal />} />
+						<Route path="/contact" element={<Contact />} />
+						<Route path="/cart" element={<Cart />} />
+						<Route path="*" element={<ErrorPage />} />
+					</Routes>
+				</CartContextProvider>
 			</BrowserRouter>
 		</div>
 	);

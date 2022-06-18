@@ -1,23 +1,13 @@
-import { useState } from "react";
-import "./ItemCount.css";
 import { Link } from "react-router-dom";
-function ItemCount({ stock, initial }) {
-	const [contador, setContador] = useState(initial);
-	const [addToCart, setAddToCart] = useState(false);
-	const handleAdd = () =>
-		contador < stock
-			? setContador(contador + 1)
-			: alert("No hay stock disponible");
-	const handleSubstract = () =>
-		contador > initial
-			? setContador(contador - 1)
-			: alert("No puedes sacar mas productos");
-	const reset = () => setContador(initial);
-	const handleAddToCart = () => {
-		contador > 0 && contador <= stock
-			? setAddToCart(true) && alert("Producto agregado al carrito")
-			: setAddToCart(false);
-	};
+import "./ItemCount.css";
+function ItemCount({
+	addToCart,
+	handleAdd,
+	handleSubstract,
+	reset,
+	handleAddToCart,
+	contador,
+}) {
 	return (
 		<>
 			<div className="product">
