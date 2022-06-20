@@ -1,25 +1,34 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import ItemCount from "./ItemCount/ItemCount";
+import { CartContext } from "../context/CartContext";
 import "./ItemDetail.css";
 export default function ItemDetail({ productDetail }) {
 	const { name, description, img, stock, price } = productDetail;
 	let initial = 1;
+	const { isInCart, addItem } = useContext(CartContext);
 	const [contador, setContador] = useState(initial);
 	const [addToCart, setAddToCart] = useState(false);
+	//AGREGA 1 AL CONTADOR
 	const handleAdd = () =>
 		contador < stock
 			? setContador(contador + 1)
 			: alert("No hay stock disponible");
+	//RESTA 1 AL CONTADOR
 	const handleSubstract = () =>
 		contador > initial
 			? setContador(contador - 1)
 			: alert("No puedes sacar mas productos");
+	//RESET
 	const reset = () => setContador(initial);
+	//Metodo SOME - ItemDetail - Detecta el producto que se va agregar ya fue agreagado. Devuelve un boolean
 	const handleAddToCart = () => {
 		contador > 0 && contador <= stock
-			? setAddToCart(true)
+			? setAddToCart(true) &&
+			  isInCart(productDetail.id) &&
+			  addItem(productDetail, contador)
 			: setAddToCart(false);
 	};
+
 	return (
 		<div>
 			<div className="productDetailShown container">

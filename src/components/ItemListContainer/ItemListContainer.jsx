@@ -11,7 +11,7 @@ const coffeesList = [
 		description:
 			"Is simply dummy text of the printing and typesetting industry.",
 		price: 50,
-		img: "https://i.ibb.co/qnNNsqg/first-Product.png",
+		img: "https://live.staticflickr.com/65535/52161552670_f19a1504bf_b.jpg",
 		stock: 30,
 	},
 	{
@@ -21,7 +21,7 @@ const coffeesList = [
 		description:
 			"Is simply dummy text of the printing and typesetting industry.",
 		price: 45,
-		img: "https://i.ibb.co/ZxmFx0g/second-Product.png",
+		img: "https://live.staticflickr.com/65535/52161068523_0aa6ce41ac_b.jpg",
 		stock: 5,
 	},
 	{
@@ -31,7 +31,7 @@ const coffeesList = [
 		description:
 			"Is simply dummy text of the printing and typesetting industry.",
 		price: 20,
-		img: "https://i.ibb.co/YbyNdH0/third-Product.png",
+		img: "https://live.staticflickr.com/65535/52161552530_bca61e961c_b.jpg",
 		stock: 10,
 	},
 	{
@@ -41,7 +41,7 @@ const coffeesList = [
 		description:
 			"Is simply dummy text of the printing and typesetting industry.",
 		price: 30,
-		img: "https://i.ibb.co/YbyNdH0/third-Product.png",
+		img: "https://live.staticflickr.com/65535/52161302524_2f9f23947c_b.jpg",
 		stock: 3,
 	},
 	{
@@ -51,7 +51,7 @@ const coffeesList = [
 		description:
 			"Is simply dummy text of the printing and typesetting industry.",
 		price: 25,
-		img: "https://i.ibb.co/xMcbK2k/giftCard.png",
+		img: "https://live.staticflickr.com/65535/52160045872_0cd970eb2c_b.jpg",
 		stock: 600,
 	},
 	{
@@ -61,7 +61,7 @@ const coffeesList = [
 		description:
 			"Is simply dummy text of the printing and typesetting industry.",
 		price: 45,
-		img: "https://i.ibb.co/ZxmFx0g/second-Product.png",
+		img: "https://live.staticflickr.com/65535/52160045872_0cd970eb2c_b.jpg",
 		stock: 5,
 	},
 	{
@@ -71,7 +71,7 @@ const coffeesList = [
 		description:
 			"Is simply dummy text of the printing and typesetting industry.",
 		price: 50,
-		img: "https://i.ibb.co/hdQnK8t/second-Gift-Card.png",
+		img: "https://live.staticflickr.com/65535/52161066806_14ebae7c80_b.jpg",
 		stock: 700,
 	},
 	{
@@ -81,7 +81,7 @@ const coffeesList = [
 		description:
 			"Is simply dummy text of the printing and typesetting industry.",
 		price: 50,
-		img: "https://i.ibb.co/xMcbK2k/giftCard.png",
+		img: "https://live.staticflickr.com/65535/52161066776_2022a7fcca_b.jpg",
 		stock: 700,
 	},
 ];

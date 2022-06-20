@@ -27,7 +27,7 @@ function NavBarBootstrap() {
 						</Nav.Link>
 					</Nav>
 					<div>
-						<CartWidget number={3} />
+						<CartWidget />
 					</div>
 				</Navbar.Collapse>
 			</Container>

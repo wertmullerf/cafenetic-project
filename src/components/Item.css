@@ -38,3 +38,17 @@
 	display: block;
 	text-decoration: none;
 }
+@media only screen and (min-width: 1440px) and (max-width: 1650px) {
+	.productsList img {
+		width: 20rem;
+		height: 600px;
+		object-fit: cover;
+	}
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+	.productsList img {
+		width: 18rem;
+		height: 600px;
+		object-fit: cover;
+	}
+}
