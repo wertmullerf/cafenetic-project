@@ -103,7 +103,7 @@ export default function ItemListContainer() {
 							(item) => item.category === categoryId
 						)
 				  );
-		}, 2000);
+		});
 		productsPromise
 			.then((result) => {
 				setItems(result);

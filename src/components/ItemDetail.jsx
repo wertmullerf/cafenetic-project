@@ -20,13 +20,13 @@ export default function ItemDetail({ productDetail }) {
 			: alert("No puedes sacar mas productos");
 	//RESET
 	const reset = () => setContador(initial);
-	//Metodo SOME - ItemDetail - Detecta el producto que se va agregar ya fue agreagado. Devuelve un boolean
+
 	const handleAddToCart = () => {
-		contador > 0 && contador <= stock
-			? setAddToCart(true) &&
-			  isInCart(productDetail.id) &&
-			  addItem(productDetail, contador)
-			: setAddToCart(false);
+		if (contador > 0 && contador <= stock) {
+			setAddToCart(true);
+			isInCart(productDetail.id); //Metodo SOME - ItemDetail - Detecta el producto que se va agregar ya fue agreagado. Devuelve un boolean
+			addItem(productDetail, contador);
+		}
 	};
 
 	return (

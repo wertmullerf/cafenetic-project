@@ -2,11 +2,12 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import { Loader } from "./components/Loader";
 import NavBarBootstrap from "./components/NavBar/NavBarBootstrap";
 import CartContextProvider from "./context/CartContext";
-import { Cart } from "./pages/Cart";
 import Contact from "./pages/Contact";
 import ErrorPage from "./pages/ErrorPage";
+import CartPage from "./pages/CartPage";
 import Home from "./pages/Home";
 import Journal from "./pages/Journal";
 import Products from "./pages/Products";
@@ -14,8 +15,8 @@ import Products from "./pages/Products";
 function App() {
 	return (
 		<div className="App">
-			<BrowserRouter>
-				<CartContextProvider>
+			<CartContextProvider>
+				<BrowserRouter>
 					<NavBarBootstrap />
 					<Routes>
 						<Route path="/" element={<Home />} />
@@ -30,11 +31,12 @@ function App() {
 						/>
 						<Route path="/journal" element={<Journal />} />
 						<Route path="/contact" element={<Contact />} />
-						<Route path="/cart" element={<Cart />} />
+						<Route path="/cart" element={<CartPage />} />
 						<Route path="*" element={<ErrorPage />} />
 					</Routes>
-				</CartContextProvider>
-			</BrowserRouter>
+					{/* <Loader loading={true} /> */}
+				</BrowserRouter>
+			</CartContextProvider>
 		</div>
 	);
 }

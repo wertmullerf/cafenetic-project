@@ -1,35 +1,42 @@
-.cardSection{
-    display: flex;
-    gap:2%;
-    margin-top: 2rem;
+.cardSection {
+	display: flex;
+	gap: 2%;
+	margin-top: 2rem;
 }
-.card{
-    height: 700px;
-    width: 30rem;  
-    background-size: cover;  
-    background-position: center;
-    border: none;
-    display: inline;
+.card {
+	height: 700px;
+	width: 30rem;
+	background-size: cover;
+	background-position: center;
+	border: none;
+	display: inline;
+}
+.card strong {
+	position: relative;
+	top: 450px;
+	margin-left: 1rem;
+}
+.card p {
+	position: relative;
+	top: 440px;
+	width: 100%;
+	right: 115px;
+}
 
+.card1 {
+	background-image: url("../../images/shop2.jpg");
 }
-.card strong{
-    position: relative;
-    top: 450px;
-    margin-left: 1rem;
+.card2 {
+	background-image: url("../../images/products.jpg");
 }
-.card p{
-    position: relative;
-    top: 440px;
-    width: 100%;
-    right: 115px;
+.card3 {
+	background-image: url("../../images/coffee2.jpg");
 }
-
-.card1{
-    background-image: url('../../images/shop2.jpg');
-}
-.card2{
-    background-image: url('../../images/products.jpg');
-}
-.card3{
-    background-image: url('../../images/coffee2.jpg');
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+	.card {
+		margin-left: 1rem;
+	}
+	.card p {
+		right: 5.2em;
+	}
 }
