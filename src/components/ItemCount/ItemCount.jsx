@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./ItemCount.css";
+import { Toaster, toast } from "react-hot-toast";
 function ItemCount({
 	addToCart,
 	handleAdd,
@@ -19,18 +20,18 @@ function ItemCount({
 						>
 							-
 						</button>
-						<strong className="m-2">{contador}</strong>
+						<strong style={{ fontSize: "1.3rem" }} className="m-2">
+							{contador}
+						</strong>
 						<button className="btn btn-light" onClick={handleAdd}>
 							+
 						</button>
+
 						<button
-							className="btn btn-success"
+							className="addToCartBtn"
 							onClick={() => handleAddToCart()}
 						>
-							Agregar al carrito
-						</button>
-						<button className="btn btn-danger" onClick={reset}>
-							Reiniciar
+							Add to cart
 						</button>
 					</>
 				)}
@@ -38,12 +39,11 @@ function ItemCount({
 				{addToCart && (
 					<>
 						<Link
-							className="d-block mt-3 text-decoration-none text-white h6"
+							className="d-block mt-3 text-decoration-none h6 goToCart"
 							to={"/cart"}
 						>
 							Go to the cart
 						</Link>
-						{alert("Producto agregado al carrito")}
 					</>
 				)}
 			</div>

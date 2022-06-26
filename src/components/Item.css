@@ -36,7 +36,11 @@
 	text-align: center;
 	cursor: pointer;
 	display: block;
+	transition: 0.5s;
 	text-decoration: none;
+}
+.btnItem:hover {
+	color: #fff;
 }
 @media only screen and (min-width: 1440px) and (max-width: 1650px) {
 	.productsList img {

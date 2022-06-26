@@ -1,3 +1,29 @@
-.logo{
-    width: 100px;
+.logo {
+	width: 100px;
+}
+.navbar {
+	position: fixed;
+}
+
+.writtenLogo {
+	color: #fff !important;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-decoration: none;
+	transition: all 1s ease;
+	margin-left: 1rem;
+}
+.writtenLogo :hover {
+	color: #bd9576 !important;
+}
+
+.black {
+	color: #000 !important;
+}
+
+.dropdown-toggle::after {
+	color: #000 !important;
+}
+.navbar-light .navbar-toggler {
+	background-color: #fff !important;
 }

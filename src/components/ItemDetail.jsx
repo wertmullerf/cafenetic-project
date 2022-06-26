@@ -1,7 +1,9 @@
 import { useContext, useState } from "react";
 import ItemCount from "./ItemCount/ItemCount";
 import { CartContext } from "../context/CartContext";
+import { toast, Toaster } from "react-hot-toast";
 import "./ItemDetail.css";
+
 export default function ItemDetail({ productDetail }) {
 	const { name, description, img, stock, price } = productDetail;
 	let initial = 1;
@@ -12,17 +14,20 @@ export default function ItemDetail({ productDetail }) {
 	const handleAdd = () =>
 		contador < stock
 			? setContador(contador + 1)
-			: alert("No hay stock disponible");
+			: toast.error("There is no more stock");
 	//RESTA 1 AL CONTADOR
 	const handleSubstract = () =>
 		contador > initial
 			? setContador(contador - 1)
-			: alert("No puedes sacar mas productos");
+			: toast("You can't substract from 0", {
+					icon: "😡",
+			  });
 	//RESET
 	const reset = () => setContador(initial);
 
 	const handleAddToCart = () => {
 		if (contador > 0 && contador <= stock) {
+			toast.success("Product added to the cart");
 			setAddToCart(true);
 			isInCart(productDetail.id); //Metodo SOME - ItemDetail - Detecta el producto que se va agregar ya fue agreagado. Devuelve un boolean
 			addItem(productDetail, contador);
@@ -32,10 +37,13 @@ export default function ItemDetail({ productDetail }) {
 	return (
 		<div>
 			<div className="productDetailShown container">
+				<div className="productDetailImg">
+					<img src={img} alt="" />
+				</div>
 				<div className="productDetailText">
 					<h3>{name}</h3>
-					<p>{description}</p>
 					<strong>${price}</strong>
+					<p>{description}</p>
 					<p>Products in stock: {stock}</p>
 					<ItemCount
 						handleAdd={handleAdd}
@@ -49,9 +57,7 @@ export default function ItemDetail({ productDetail }) {
 						setContador={setContador}
 					/>
 				</div>
-				<div className="productDetailImg">
-					<img src={img} alt="" />
-				</div>
+				<Toaster position="top-center" reverseOrder={false} />
 			</div>
 		</div>
 	);

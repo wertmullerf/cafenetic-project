@@ -1,0 +1,24 @@
+.footer {
+	height: 30vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #000;
+}
+.footer h6 {
+	font-size: 2.5rem;
+	font-weight: 500;
+	letter-spacing: 1px;
+	color: #fff;
+	text-align: center;
+}
+.footer strong {
+	font-size: 2rem;
+	margin-top: 0.5rem;
+	font-weight: 500;
+	letter-spacing: 1px;
+	color: #bd9576;
+	border-bottom: 1px solid #bd9576;
+	cursor: pointer;
+}
