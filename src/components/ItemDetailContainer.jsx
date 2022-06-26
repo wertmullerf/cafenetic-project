@@ -1,32 +1,36 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemDetail from "./ItemDetail";
+import { doc, getDoc, getFirestore } from "firebase/firestore";
 function ItemDetailContainer() {
 	const [productDetail, setProductDetail] = useState();
+	const [loading, setLoading] = useState(true);
 	const { idProducto } = useParams();
 
 	useEffect(() => {
-		const getDetail = () => {
-			fetch("../../products.json")
-				.then((res) => res.json())
-				.then((productos) => {
-					setProductDetail(
-						productos.find((producto) => producto.id === idProducto)
-					);
-					console.log(productDetail);
-				})
-				.catch((err) => console.log(err));
-			console.log(productDetail);
-		};
-		getDetail();
+		const db = getFirestore();
+		const productRef = doc(db, "items", idProducto);
+		getDoc(productRef)
+			.then((snapshot) => {
+				setProductDetail({ ...snapshot.data(), id: snapshot.id });
+			})
+			.catch((error) => {
+				console.log(error);
+			})
+			.finally(() => {
+				setLoading(false);
+			});
 	}, [idProducto]);
 	return (
 		<div>
-			{productDetail ? (
-				<ItemDetail productDetail={productDetail} />
-			) : (
-				<div>Loading...</div>
+			{loading && (
+				<div className="loading">
+					<div className="progress-loader">
+						<div className="progress"></div>
+					</div>
+				</div>
 			)}
+			{productDetail && <ItemDetail productDetail={productDetail} />}
 		</div>
 	);
 }

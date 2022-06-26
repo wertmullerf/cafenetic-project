@@ -11,19 +11,19 @@ import ErrorPage from "./pages/ErrorPage";
 import Home from "./pages/Home";
 import Journal from "./pages/Journal";
 import Products from "./pages/Products";
-// import { initializeApp } from "firebase/app";
+import { initializeApp } from "firebase/app";
 
 function App() {
-	// const firebaseConfig = {
-	// 	apiKey: "AIzaSyCdTdeBR24K959zQ0b5IfSDacJ5A9IjrXU",
-	// 	authDomain: "cafenetic.firebaseapp.com",
-	// 	projectId: "cafenetic",
-	// 	storageBucket: "cafenetic.appspot.com",
-	// 	messagingSenderId: "478642590510",
-	// 	appId: "1:478642590510:web:e081fefe22437f231d20bf",
-	// };
+	const firebaseConfig = {
+		apiKey: "AIzaSyCdTdeBR24K959zQ0b5IfSDacJ5A9IjrXU",
+		authDomain: "cafenetic.firebaseapp.com",
+		projectId: "cafenetic",
+		storageBucket: "cafenetic.appspot.com",
+		messagingSenderId: "478642590510",
+		appId: "1:478642590510:web:e081fefe22437f231d20bf",
+	};
 
-	// initializeApp(firebaseConfig);
+	initializeApp(firebaseConfig);
 	return (
 		<div className="App">
 			<CartContextProvider>
