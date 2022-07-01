@@ -1,0 +1,10 @@
+.checkout {
+	height: 100vh;
+}
+.error {
+	color: red !important;
+}
+.remove {
+	cursor: pointer;
+	border: none;
+}

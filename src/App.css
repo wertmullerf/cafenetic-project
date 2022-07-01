@@ -9,3 +9,19 @@
 body {
 	background-color: #0a0b0a !important;
 }
+.title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.title strong {
+	font-size: 2.5rem;
+	color: #ffff;
+	font-weight: 500;
+}
+.title p {
+	font-weight: 400;
+	color: #ffff;
+	margin-top: 1rem;
+}

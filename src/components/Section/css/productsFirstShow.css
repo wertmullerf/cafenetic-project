@@ -1,0 +1,42 @@
+.productsFirstShow {
+	height: 100vh;
+}
+.link {
+	color: #000000;
+	display: flex;
+	margin: auto;
+	font-size: 1.1rem;
+	text-decoration: none;
+	transition: 0.5s;
+	margin-top: 2rem;
+	width: fit-content;
+	padding: 1rem 1.5rem;
+	background-color: #ffffff;
+	font-weight: 500;
+}
+.link:hover {
+	color: #bd9576;
+	background-color: #000000;
+}
+.productsShown {
+	display: flex;
+	justify-content: center;
+}
+
+.productsShown img {
+	height: 700px;
+	width: 30rem;
+	object-fit: cover;
+	margin-left: 1rem;
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+	.productsShown img {
+		width: 25rem;
+		object-fit: cover;
+		margin-left: 1rem;
+	}
+	.productsFirstShow {
+		margin-top: 5em;
+		height: 110vh;
+	}
+}

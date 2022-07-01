@@ -1,38 +1,15 @@
-import CartWidget from "../CartWidget/CartWidget";
-import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from "../../images/logo.png";
-import "./NavBarBootstrap.css";
+import {
+	Container,
+	Nav,
+	Navbar,
+	NavDropdown,
+	Offcanvas,
+} from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { Offcanvas, NavDropdown } from "react-bootstrap";
+import CartWidget from "../Cart/CartWidget";
+import "./navBarBootstrap.css";
 function NavBarBootstrap() {
 	return (
-		// <Navbar className="nav" variant="dark" expand="lg">
-		// 	<Link className="writtenLogo" to={"/"}>
-		// 		{/* <img className="logo" src={logo} alt="Cafenetic logo" /> */}
-		// 		CAFENETIC
-		// 	</Link>
-		// 	<Navbar.Toggle aria-controls="basic-navbar-nav" />
-		// 	<Navbar.Collapse
-		// 		className="justify-content-xl-around ml-5"
-		// 		id="basic-navbar-nav"
-		// 	>
-		// 		<Nav className="Nav.LinkNav menu ">
-		// <Nav.Link className="menuLink" as={Link} to="/">
-		// 	Home
-		// </Nav.Link>
-		// <Nav.Link className="menuLink" as={Link} to="/shop">
-		// 	Shop
-		// </Nav.Link>
-		// <Nav.Link className="menuLink" as={Link} to="/journal">
-		// 	Journal
-		// </Nav.Link>
-		// <Nav.Link className="menuLink" as={Link} to="/contact">
-		// 	Contact
-		// </Nav.Link>
-		// 		</Nav>
-
-		// 	</Navbar.Collapse>
-		// </Navbar>
 		<>
 			{[false].map((expand) => (
 				<Navbar

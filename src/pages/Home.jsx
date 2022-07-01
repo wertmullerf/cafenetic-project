@@ -1,17 +1,13 @@
-import React from "react";
-import Freatures from "../components/Freatures/Freatures";
-import HeroSection from "../components/HeroSection/HeroSection";
-import ProductsFirstShow from "../components/ProductsFirstShow/ProductsFirstShow";
-import Sustainability from "../components/Sustainability/Sustainability";
+import ProductsFirstShow from "../components/Section/ProductsFirstShow";
+import HeroSection from "../components/Section/HeroSection";
+import Sustainability from "../components/Section/Sustainability";
 
 function Home() {
 	return (
 		<div className="home">
-			{/* <ItemListContainer msg={"Bienvenidos a mi tienda online!"} /> */}
 			<HeroSection />
 			<Sustainability />
 			<ProductsFirstShow />
-			{/* <Freatures /> */}
 		</div>
 	);
 }

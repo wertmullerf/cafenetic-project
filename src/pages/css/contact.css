@@ -1,0 +1,17 @@
+.contact {
+	height: 70vh;
+	background-image: url("https://live.staticflickr.com/65535/52175585275_211e32930b_k.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contact h6 {
+	font-size: 4rem;
+	font-weight: 500;
+	letter-spacing: 1px;
+	color: #fff;
+	text-align: center;
+}

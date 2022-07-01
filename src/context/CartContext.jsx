@@ -1,9 +1,14 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 export const CartContext = createContext({});
 const { Provider } = CartContext;
+
 const CartContextProvider = ({ children }) => {
-	const [cart, setCart] = useState([]);
+	const [cart, setCart] = useState(
+		JSON.parse(localStorage.getItem("cart"))
+			? JSON.parse(localStorage.getItem("cart"))
+			: []
+	);
 	//ItemDetail - Se encarga de agreagr el producto al carrito, si ya fue agregado se suma la qty.
 	const addItem = (item, qty) => {
 		const newItem = {
@@ -46,6 +51,9 @@ const CartContextProvider = ({ children }) => {
 		return cart.reduce((acc, x) => (acc += x.price * x.qty), 0);
 	};
 
+	useEffect(() => {
+		localStorage.setItem("cart", JSON.stringify(cart));
+	}, [cart]);
 	return (
 		<Provider
 			value={{

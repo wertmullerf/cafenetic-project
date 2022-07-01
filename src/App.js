@@ -1,17 +1,18 @@
+import { initializeApp } from "firebase/app";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import ItemDetailContainer from "./components/Containers/ItemDetailContainer";
+import ItemListContainer from "./components/Containers/ItemListContainer";
 import { Footer } from "./components/Footer/Footer";
-import ItemDetailContainer from "./components/ItemDetailContainer";
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import NavBarBootstrap from "./components/NavBar/NavBarBootstrap";
 import CartContextProvider from "./context/CartContext";
 import CartPage from "./pages/CartPage";
+import CheckoutPage from "./pages/CheckoutPage";
 import Contact from "./pages/Contact";
 import ErrorPage from "./pages/ErrorPage";
 import Home from "./pages/Home";
 import Journal from "./pages/Journal";
 import Products from "./pages/Products";
-import { initializeApp } from "firebase/app";
 
 function App() {
 	const firebaseConfig = {
@@ -44,8 +45,8 @@ function App() {
 						<Route path="/contact" element={<Contact />} />
 						<Route path="/cart" element={<CartPage />} />
 						<Route path="*" element={<ErrorPage />} />
+						<Route path="/checkout" element={<CheckoutPage />} />
 					</Routes>
-					{/* <Loader loading={true} /> */}
 					<Footer />
 				</BrowserRouter>
 			</CartContextProvider>

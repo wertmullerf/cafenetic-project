@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import ItemListContainer from "../components/ItemListContainer/ItemListContainer";
-import "./css/productsPage.css";
+import ItemListContainer from "../components/Containers/ItemListContainer";
 function Products() {
 	return (
 		<>
