@@ -36,7 +36,7 @@
 		margin-left: 1rem;
 	}
 	.productsFirstShow {
-		margin-top: 5em;
-		height: 110vh;
+		margin: 10rem 0 5rem 0;
+		height: auto;
 	}
 }

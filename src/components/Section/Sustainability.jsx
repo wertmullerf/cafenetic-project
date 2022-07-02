@@ -1,4 +1,3 @@
-import Card from "../Ui/Card";
 import "./css/sustainability.css";
 function Sustainability() {
 	return (
@@ -12,7 +11,23 @@ function Sustainability() {
 					Everything we do is a matter of heart, body and soul.
 				</p>
 			</div>
-			<Card title1={"Visit us"} title2={"Buy now"} title3={"Test it"} />
+			<section className="cardSection container">
+				<div className="card card1">
+					<div className="cardText">
+						<strong>Visit us</strong>
+					</div>
+				</div>
+				<div className="card card2">
+					<div className="cardText">
+						<strong>Buy now</strong>
+					</div>
+				</div>
+				<div className="card card3">
+					<div className="cardText">
+						<strong>Test it</strong>
+					</div>
+				</div>
+			</section>
 		</section>
 	);
 }
