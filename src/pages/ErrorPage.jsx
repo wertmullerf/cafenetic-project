@@ -9,7 +9,7 @@ function ErrorPage() {
 			<h6>
 				Ops... Something has gone wrong or that page no longer exist
 			</h6>
-			<Link className="return" to={"/"}>
+			<Link className="return" to={"/shop"}>
 				Please return to the home page
 			</Link>
 		</div>

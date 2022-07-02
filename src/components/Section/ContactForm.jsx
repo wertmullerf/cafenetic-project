@@ -27,7 +27,7 @@ const ContactForm = () => {
 		});
 	};
 	return (
-		<div className="container contactForm">
+		<div className="container-fluid	 contactForm">
 			<form onSubmit={sendEmail}>
 				<div className="col-8 form-group mx-auto">
 					<label>Name</label>

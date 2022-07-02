@@ -1,5 +1,7 @@
 .footer {
-	height: 30vh;
+	height: auto;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -21,4 +23,20 @@
 	color: #bd9576;
 	border-bottom: 1px solid #bd9576;
 	cursor: pointer;
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+	.footer {
+		height: 60vh;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+	.footer {
+		height: 40vh;
+	}
+	.footer h6 {
+		font-size: 1.5rem;
+	}
+	.footer strong {
+		font-size: 1.2rem;
+	}
 }

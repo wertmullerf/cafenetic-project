@@ -9,6 +9,7 @@ const CartContextProvider = ({ children }) => {
 			? JSON.parse(localStorage.getItem("cart"))
 			: []
 	);
+
 	//ItemDetail - Se encarga de agreagr el producto al carrito, si ya fue agregado se suma la qty.
 	const addItem = (item, qty) => {
 		const newItem = {

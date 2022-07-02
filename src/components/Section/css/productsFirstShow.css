@@ -1,5 +1,7 @@
 .productsFirstShow {
-	height: 100vh;
+	height: auto;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 }
 .link {
 	color: #000000;
@@ -36,7 +38,25 @@
 		margin-left: 1rem;
 	}
 	.productsFirstShow {
-		margin: 10rem 0 5rem 0;
+		margin: 10rem 0 10rem 0;
 		height: auto;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+	.productsShown img {
+		width: 20rem;
+		height: 500px;
+		display: flex;
+		text-align: center;
+		object-fit: cover;
+		margin-bottom: 1rem;
+	}
+	.productsFirstShow {
+		margin: 10rem 0 10rem 0;
+		height: auto;
+		text-align: center;
+	}
+	.productsFirstShow p {
+		width: 95%;
 	}
 }

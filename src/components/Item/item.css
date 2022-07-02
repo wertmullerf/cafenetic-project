@@ -69,3 +69,23 @@
 		display: flex;
 	}
 }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+	.itemList {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+	.productsList img {
+		width: 20rem;
+		height: 500px;
+		align-self: center;
+	}
+	.productsList {
+		margin-bottom: 5rem;
+		margin-left: 0;
+		min-width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+}

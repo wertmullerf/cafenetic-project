@@ -43,3 +43,11 @@
 	background-color: #bd9576;
 	color: #fff;
 }
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+	.hero {
+		align-items: start;
+	}
+	.hero h3 {
+		font-size: 3rem;
+	}
+}

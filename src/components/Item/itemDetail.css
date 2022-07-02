@@ -43,3 +43,20 @@
 		margin: 5rem 0 5rem 0;
 	}
 }
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+	.productDetailShown {
+		height: auto;
+		padding: 5rem 0 5rem 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.productDetailShown img {
+		height: 500px;
+		width: 100%;
+	}
+	.productDetailText {
+		width: 100%;
+		margin: 5rem 0 5rem 0;
+	}
+}

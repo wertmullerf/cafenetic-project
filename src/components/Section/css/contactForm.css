@@ -44,3 +44,16 @@ textarea {
 	background-color: #fff !important;
 	color: #000 !important;
 }
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+	.contactForm {
+		height: auto;
+		margin: 5rem 0 5rem 0;
+
+		justify-content: center !important;
+		width: 100% !important;
+	}
+	.contactForm input,
+	textarea {
+		width: 100%;
+	}
+}
