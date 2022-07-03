@@ -11,7 +11,6 @@ import CheckoutPage from "./pages/CheckoutPage";
 import Contact from "./pages/Contact";
 import ErrorPage from "./pages/ErrorPage";
 import Home from "./pages/Home";
-import Journal from "./pages/Journal";
 import Products from "./pages/Products";
 
 function App() {
@@ -41,7 +40,7 @@ function App() {
 							path="/shop/:categoryId"
 							element={<ItemListContainer />}
 						/>
-						<Route path="/journal" element={<Journal />} />
+
 						<Route path="/contact" element={<Contact />} />
 						<Route path="/cart" element={<CartPage />} />
 						<Route path="*" element={<ErrorPage />} />

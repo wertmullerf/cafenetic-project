@@ -82,6 +82,10 @@
 	}
 	.card {
 		width: 20rem;
+		height: 500px;
 		margin-bottom: 1rem;
+	}
+	.cardText {
+		top: 350px;
 	}
 }
