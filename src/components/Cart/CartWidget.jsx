@@ -3,7 +3,6 @@ import { CartContext } from "../../context/CartContext";
 import { Link } from "react-router-dom";
 export default function CartWidget() {
 	const { getItemQty } = useContext(CartContext);
-	console.log(getItemQty);
 	return (
 		<>
 			<Link to="/cart">
@@ -20,7 +19,6 @@ export default function CartWidget() {
 				<span className="badge rounded-pill bg-dark text-white ">
 					{getItemQty()}
 				</span>
-				{/* {getItemQty()} */}
 			</Link>
 		</>
 	);

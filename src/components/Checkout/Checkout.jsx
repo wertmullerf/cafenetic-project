@@ -93,8 +93,6 @@ export default function Checkout() {
 			setTimeout(() => {
 				return navigate("/shop");
 			}, 5000);
-			console.log(order);
-			console.log("success");
 		} else {
 			toast.error("Please fill all the fields");
 		}

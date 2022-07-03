@@ -84,13 +84,6 @@ function NavBarBootstrap() {
 									<Nav.Link
 										className="black"
 										as={Link}
-										to="/journal"
-									>
-										Journal
-									</Nav.Link>
-									<Nav.Link
-										className="black"
-										as={Link}
 										to="/contact"
 									>
 										Contact

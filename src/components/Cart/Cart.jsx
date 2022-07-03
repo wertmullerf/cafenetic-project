@@ -74,7 +74,10 @@ function Cart() {
 									<button>Checkout</button>
 								</Link>
 								<div className="continue-shopping">
-									<Link to={"/shop"}>
+									<Link
+										style={{ textDecoration: "none" }}
+										to={"/shop"}
+									>
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
 											width="20"
