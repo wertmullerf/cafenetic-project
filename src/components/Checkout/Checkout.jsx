@@ -82,14 +82,15 @@ export default function Checkout() {
 			};
 			addDoc(orderCollection, order).then(({ id }) => {
 				setOrderId(id);
+				toast(
+					`✔️ Your order has been placed successfully, ID: ${id} we will contact you soon. \n You will be redirected to the shop page.`,
+					{
+						duration: 7500,
+					}
+				);
 			});
 			setOrderStatus(true);
-			toast(
-				"✔️ Your order has been placed successfully, we will contact you soon. \n You will be redirected to the shop page.",
-				{
-					duration: 4500,
-				}
-			);
+
 			setTimeout(() => {
 				return navigate("/shop");
 			}, 5000);

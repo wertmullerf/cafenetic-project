@@ -88,3 +88,14 @@
 		flex-direction: column;
 	}
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.productsList img {
+		width: 18rem;
+		height: 600px;
+		object-fit: cover;
+	}
+	.productsList {
+		height: auto;
+		margin-bottom: 5rem;
+	}
+}
